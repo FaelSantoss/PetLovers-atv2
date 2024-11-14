@@ -19,12 +19,10 @@ class ModalBase extends Component<ModalBaseProps, ModalBaseState> {
     };
   }
 
-  // Função para atualizar o estado
   setIsOpen = (isOpen: boolean) => {
     this.setState({ isOpen });
   };
 
-  // Função chamada ao confirmar
   handleConfirm = () => {
     this.setIsOpen(false);
   };
